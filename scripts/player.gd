@@ -55,7 +55,8 @@ func _physics_process(delta):
 			$AnimatedSprite2D/AnimationPlayer.play("walkingL")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		$AnimatedSprite2D/AnimationPlayer.stop()
+		if $AnimatedSprite2D/AnimationPlayer.current_animation != "idle":
+			$AnimatedSprite2D/AnimationPlayer.play("idle")
 		
 	move_and_slide()
 
