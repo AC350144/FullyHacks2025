@@ -1,8 +1,7 @@
-[gd_scene load_steps=6 format=4 uid="uid://ii8jh23o07h6"]
+[gd_scene load_steps=5 format=4 uid="uid://ii8jh23o07h6"]
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
 [ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
-[ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="2_rghbl"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rghbl"]
 texture = ExtResource("1_c3u4w")
@@ -174,9 +173,3 @@ tile_map_data = PackedByteArray("AAAAAP//AAAAAAEAAAABAP//AAAAAAEAAAACAP//AAAFAAA
 tile_set = SubResource("TileSet_3mkt7")
 
 [node name="Enemies" type="Node2D" parent="."]
-
-[node name="Player" parent="." instance=ExtResource("2_rghbl")]
-position = Vector2(16, -34)
-
-[node name="RayCast2D" type="RayCast2D" parent="."]
-position = Vector2(104, -97)
