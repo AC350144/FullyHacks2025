@@ -1,9 +1,9 @@
 [gd_scene load_steps=2 format=3 uid="uid://bmou7yquaeulc"]
 
-[ext_resource type="Script" uid="uid://bwlv4tiaursei" path="res://scripts/player.gd" id="1_3vyb7"]
+[ext_resource type="Script" uid="uid://bwlv4tiaursei" path="res://temp/player.gd" id="1_8m2vk"]
 
 [node name="Player" type="CharacterBody2D"]
-script = ExtResource("1_3vyb7")
+script = ExtResource("1_8m2vk")
 
 [node name="OxygenBar" type="ProgressBar" parent="."]
 offset_left = 317.0

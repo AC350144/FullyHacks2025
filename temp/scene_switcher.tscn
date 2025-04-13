@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bpbhvfkv1qjqc"]
 
-[ext_resource type="Script" uid="uid://ba3m1oaobabfi" path="res://scripts/scene_switcher.gd" id="1_oanpq"]
+[ext_resource type="Script" uid="uid://ba3m1oaobabfi" path="res://temp/scene_switcher.gd" id="1_oanpq"]
 
 [node name="SceneSwitcher" type="Node"]
 script = ExtResource("1_oanpq")
