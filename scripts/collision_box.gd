@@ -4,4 +4,4 @@ extends Area2D
 
 func _on_body_entered(body):
 	if body.name == "Player":
-		body.get_hit(10)
+		body.get_hit(20)

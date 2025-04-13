@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://cl38fvqorqh51"]
+[gd_scene load_steps=9 format=3 uid="uid://cl38fvqorqh51"]
 
 [ext_resource type="Script" uid="uid://c3djo6u421ftb" path="res://scripts/enemy_1.gd" id="1_ejytf"]
 [ext_resource type="Texture2D" uid="uid://dnf1p0h7cbi31" path="res://assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_tcmaw"]
@@ -40,9 +40,6 @@ animations = [{
 "speed": 10.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6nrqq"]
-size = Vector2(10.5, 12.5)
-
 [node name="Enemy1" type="Node2D"]
 script = ExtResource("1_ejytf")
 
@@ -53,22 +50,30 @@ autoplay = "default"
 frame = 3
 frame_progress = 0.60696
 
-[node name="Collision_Box" parent="." instance=ExtResource("2_a1412")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Collision_Box"]
-position = Vector2(0, -7.25)
-shape = SubResource("RectangleShape2D_6nrqq")
-
 [node name="Right_Check" type="RayCast2D" parent="."]
 position = Vector2(0, -7)
-target_position = Vector2(47, 0)
+target_position = Vector2(55, 0)
 
 [node name="Left_Check" type="RayCast2D" parent="."]
 position = Vector2(0, -7)
-target_position = Vector2(-47, 0)
+target_position = Vector2(-56, 0)
 
 [node name="Timer" type="Timer" parent="."]
 wait_time = 2.0
 autostart = true
 
+[node name="Left_Ground_Check" type="RayCast2D" parent="."]
+position = Vector2(-25, 0)
+target_position = Vector2(0, 15)
+collision_mask = 3
+
+[node name="Right_Ground_Check" type="RayCast2D" parent="."]
+position = Vector2(24, 0)
+target_position = Vector2(0, 15)
+collision_mask = 3
+
+[node name="Collision_Box" parent="." instance=ExtResource("2_a1412")]
+collision_mask = 1
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="body_entered" from="Collision_Box" to="." method="_on_collision_box_body_entered"]

@@ -34,6 +34,8 @@ layout_mode = 2
 icon = ExtResource("2_wu84c")
 icon_alignment = 1
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="MarginContainer/VBoxContainer/PlayButton"]
+
 [node name="OptionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 icon = ExtResource("3_8ln24")
