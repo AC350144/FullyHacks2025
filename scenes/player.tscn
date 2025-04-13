@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=3 uid="uid://bmou7yquaeulc"]
 
 [ext_resource type="Script" uid="uid://bwlv4tiaursei" path="res://scripts/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://c8nbgksj0uxit" path="res://Assets/friend/walking_sprite_sheet/sprite_sheet_walking.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://c8nbgksj0uxit" path="res://assets/friend/walking_sprite_sheet/sprite_sheet_walking.png" id="2_g2els"]
 
 [sub_resource type="Animation" id="Animation_qlg0r"]
 length = 0.001
@@ -17,6 +17,9 @@ tracks/0/keys = {
 "update": 1,
 "values": [0]
 }
+
+[sub_resource type="Animation" id="Animation_g2els"]
+resource_name = "idle"
 
 [sub_resource type="Animation" id="Animation_qhqgy"]
 resource_name = "walkingL"
@@ -49,9 +52,6 @@ tracks/0/keys = {
 "update": 1,
 "values": [0, 1, 2]
 }
-
-[sub_resource type="Animation" id="Animation_g2els"]
-resource_name = "idle"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_tuyoq"]
 _data = {
