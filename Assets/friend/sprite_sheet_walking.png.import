@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c8nbgksj0uxit"
-path="res://.godot/imported/sprite_sheet_walking.png-af956411ffa78c759e9d4b6fca730640.ctex"
+path="res://.godot/imported/sprite_sheet_walking.png-08b94ba63f32ace3891bc7d39a9c10ee.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/friend/sprite_sheet_walking.png"
-dest_files=["res://.godot/imported/sprite_sheet_walking.png-af956411ffa78c759e9d4b6fca730640.ctex"]
+source_file="res://assets/friend/sprite_sheet_walking.png"
+dest_files=["res://.godot/imported/sprite_sheet_walking.png-08b94ba63f32ace3891bc7d39a9c10ee.ctex"]
 
 [params]
 
