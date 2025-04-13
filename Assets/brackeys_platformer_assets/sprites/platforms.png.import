@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dxc4lph6f6eq6"
-path="res://.godot/imported/platforms.png-d1fee25b56076fe7e31e9d4cf9b2a1c0.ctex"
+uid="uid://dfyy2i32womvo"
+path="res://.godot/imported/platforms.png-9af175688695b06091faa0c978531708.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/brackeys_platformer_assets/platforms.png"
-dest_files=["res://.godot/imported/platforms.png-d1fee25b56076fe7e31e9d4cf9b2a1c0.ctex"]
+source_file="res://assets/brackeys_platformer_assets/sprites/platforms.png"
+dest_files=["res://.godot/imported/platforms.png-9af175688695b06091faa0c978531708.ctex"]
 
 [params]
 
