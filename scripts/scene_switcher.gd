@@ -1,9 +1,9 @@
 extends Node
 
-@onready var current_planet = $planet1
+@onready var current_planet = $"Main Menu"
 
 func _ready() -> void:
-	$planet1.connect("planet_changed", doing_planet_changed)
+	$"Main Menu".connect("planet_changed", doing_planet_changed)
 	
 func doing_planet_changed(current_planet_name: String):
 	var next_planet
