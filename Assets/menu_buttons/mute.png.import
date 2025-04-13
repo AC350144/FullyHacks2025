@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://umqagynsl4r0"
-path="res://.godot/imported/mute.png-0fdbab7cb103567bebafb1fd792f83bd.ctex"
+path="res://.godot/imported/mute.png-6b7d860d731933392c1f693b90a1f999.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/menu_buttons/mute.png"
-dest_files=["res://.godot/imported/mute.png-0fdbab7cb103567bebafb1fd792f83bd.ctex"]
+source_file="res://assets/menu_buttons/mute.png"
+dest_files=["res://.godot/imported/mute.png-6b7d860d731933392c1f693b90a1f999.ctex"]
 
 [params]
 
