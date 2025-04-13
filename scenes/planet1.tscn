@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://ciipslusj36cx"]
+[gd_scene load_steps=7 format=4 uid="uid://ii8jh23o07h6"]
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
-[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
+[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
 [ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="3_3mkt7"]
+[ext_resource type="PackedScene" uid="uid://cl38fvqorqh51" path="res://scenes/enemy_1.tscn" id="4_chng0"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rghbl"]
 texture = ExtResource("1_c3u4w")
@@ -188,3 +189,9 @@ text = "WASD for Movement
 Left Click to Strike"
 horizontal_alignment = 1
 uppercase = true
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(1899, -112)
+
+[node name="Enemy1" parent="." instance=ExtResource("4_chng0")]
+position = Vector2(343, -77)
