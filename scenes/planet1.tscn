@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://ii8jh23o07h6"]
+[gd_scene load_steps=10 format=4 uid="uid://ii8jh23o07h6"]
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
 [ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
 [ext_resource type="PackedScene" path="res://scenes/parallax.tscn" id="2_chng0"]
+[ext_resource type="AudioStream" uid="uid://cd5e6betpc7r3" path="res://Assets/music/gameplay.mp3" id="2_d3g7y"]
 [ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="3_3mkt7"]
 [ext_resource type="Texture2D" uid="uid://d34qlo3kmsy0i" path="res://Assets/space ship/endpoint.png" id="4_76gy3"]
 [ext_resource type="PackedScene" uid="uid://cl38fvqorqh51" path="res://scenes/enemy_1.tscn" id="4_chng0"]
@@ -170,6 +171,9 @@ sources/0 = SubResource("TileSetAtlasSource_rghbl")
 
 [node name="Planet1" type="Node2D"]
 script = ExtResource("1_3mkt7")
+
+[node name="GameMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_d3g7y")
 
 [node name="Parallax" parent="." instance=ExtResource("2_chng0")]
 position = Vector2(26, -67)

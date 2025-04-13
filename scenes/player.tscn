@@ -252,3 +252,7 @@ shape = SubResource("CircleShape2D_3v2ag")
 zoom = Vector2(2, 2)
 limit_bottom = 285
 position_smoothing_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

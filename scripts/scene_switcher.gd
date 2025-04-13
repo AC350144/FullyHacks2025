@@ -12,6 +12,8 @@ func doing_planet_changed(current_planet_name: String):
 	match current_planet_name:
 		"main_menu_play":
 			next_planet_name = "1"
+		"main_menu_options":
+			next_planet_name = ""
 		"planet_one":
 			next_planet_name = "2"
 		

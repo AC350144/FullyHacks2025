@@ -1,4 +1,4 @@
-[gd_scene load_steps=6 format=3 uid="uid://set6jfynd6bk"]
+[gd_scene load_steps=6 format=3 uid="uid://bovexgfl1pwcl"]
 
 [ext_resource type="Script" uid="uid://c7c53n6qoambq" path="res://scripts/main_menu.gd" id="1_kv8mn"]
 [ext_resource type="Texture2D" uid="uid://dlblsgxfoknh2" path="res://Assets/main menuBG/main_screen.png" id="2_1sggn"]
@@ -20,17 +20,17 @@ scale = Vector2(1.5, 1.275)
 script = ExtResource("1_kv8mn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(380.87, -98.8235)
-scale = Vector2(0.402566, 0.474458)
+position = Vector2(384, -98.8235)
+scale = Vector2(0.4, 0.470588)
 texture = ExtResource("2_1sggn")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0
-offset_left = 8.0
-offset_top = -61.1765
-offset_right = 475.0
-offset_bottom = 280.824
-scale = Vector2(0.605, 0.605)
+offset_left = 12.0
+offset_top = -9.0
+offset_right = 82.0
+offset_bottom = 92.0
+scale = Vector2(0.35, 0.35)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
