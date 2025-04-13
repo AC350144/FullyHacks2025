@@ -1,8 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://cl38fvqorqh51"]
+[gd_scene load_steps=10 format=3 uid="uid://bns5ci8vwqgo8"]
 
-[ext_resource type="Script" uid="uid://c3djo6u421ftb" path="res://scripts/enemy_1.gd" id="1_ejytf"]
-[ext_resource type="Texture2D" uid="uid://dnf1p0h7cbi31" path="res://assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_tcmaw"]
-[ext_resource type="PackedScene" uid="uid://cga0w5lgphsae" path="res://scenes/collision_box.tscn" id="2_a1412"]
+[ext_resource type="Script" path="res://scripts/enemy_1.gd" id="1_ejytf"]
+[ext_resource type="Texture2D" uid="uid://dnf1p0h7cbi31" path="res://Assets/brackeys_platformer_assets/sprites/slime_green.png" id="1_tcmaw"]
+[ext_resource type="PackedScene" path="res://scenes/collision_box.tscn" id="2_a1412"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_a1412"]
 atlas = ExtResource("1_tcmaw")

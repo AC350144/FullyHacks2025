@@ -1,17 +1,9 @@
-<<<<<<< HEAD
-[gd_scene load_steps=8 format=4 uid="uid://ciipslusj36cx"]
-=======
-[gd_scene load_steps=7 format=4 uid="uid://ii8jh23o07h6"]
->>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d
+[gd_scene load_steps=7 format=4 uid="uid://d2k02ums2mvam"]
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
-[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
+[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
+[ext_resource type="PackedScene" uid="uid://c5yfb5hxd74t6" path="res://scenes/parallax.tscn" id="2_chng0"]
 [ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="3_3mkt7"]
-<<<<<<< HEAD
-[ext_resource type="PackedScene" uid="uid://wlbdj8t3qkhd" path="res://scenes/killzone.tscn" id="4_chng0"]
-=======
-[ext_resource type="PackedScene" uid="uid://cl38fvqorqh51" path="res://scenes/enemy_1.tscn" id="4_chng0"]
->>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rghbl"]
 texture = ExtResource("1_c3u4w")
@@ -174,12 +166,11 @@ texture = ExtResource("1_c3u4w")
 physics_layer_0/collision_layer = 3
 sources/0 = SubResource("TileSetAtlasSource_rghbl")
 
-[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_hklh5"]
-normal = Vector2(-0.00510197, 0.999987)
-distance = 58.8615
-
 [node name="Planet1" type="Node2D"]
 script = ExtResource("1_3mkt7")
+
+[node name="Parallax" parent="." instance=ExtResource("2_chng0")]
+position = Vector2(26, -67)
 
 [node name="TileMap" type="TileMapLayer" parent="."]
 texture_filter = 1
@@ -190,7 +181,7 @@ tile_set = SubResource("TileSet_3mkt7")
 [node name="Enemies" type="Node2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("3_3mkt7")]
-position = Vector2(24, -48)
+position = Vector2(32, -53)
 
 [node name="Label" type="Label" parent="."]
 offset_left = 8.0
@@ -203,17 +194,4 @@ horizontal_alignment = 1
 uppercase = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
-<<<<<<< HEAD
-position = Vector2(1888, -116)
-
-[node name="Killzone" parent="." instance=ExtResource("4_chng0")]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
-position = Vector2(460, 43)
-shape = SubResource("WorldBoundaryShape2D_hklh5")
-=======
-position = Vector2(1899, -112)
-
-[node name="Enemy1" parent="." instance=ExtResource("4_chng0")]
-position = Vector2(343, -77)
->>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d
+position = Vector2(1361, -132)
