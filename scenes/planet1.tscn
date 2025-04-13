@@ -1,8 +1,8 @@
-[gd_scene load_steps=7 format=4 uid="uid://d2k02ums2mvam"]
+[gd_scene load_steps=7 format=4 uid="uid://bgnhpfenwt47y"]
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
 [ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
-[ext_resource type="PackedScene" uid="uid://c5yfb5hxd74t6" path="res://scenes/parallax.tscn" id="2_chng0"]
+[ext_resource type="PackedScene" path="res://scenes/parallax.tscn" id="2_chng0"]
 [ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="3_3mkt7"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rghbl"]
