@@ -73,6 +73,7 @@ target_position = Vector2(0, 15)
 collision_mask = 3
 
 [node name="Collision_Box" parent="." instance=ExtResource("2_a1412")]
+collision_mask = 1
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
 [connection signal="body_entered" from="Collision_Box" to="." method="_on_collision_box_body_entered"]
