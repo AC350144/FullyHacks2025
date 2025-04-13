@@ -1,8 +1,8 @@
 [gd_scene load_steps=10 format=3 uid="uid://bmou7yquaeulc"]
 
 [ext_resource type="Script" uid="uid://bwlv4tiaursei" path="res://scripts/player.gd" id="1_3vyb7"]
-[ext_resource type="Texture2D" uid="uid://c8nbgksj0uxit" path="res://Assets/friend/walking_sprite_sheet/sprite_sheet_walking.png" id="2_g2els"]
-[ext_resource type="Texture2D" uid="uid://dp20uu8nff8it" path="res://Assets/friend/idle_sprite_sheet/idle_sheet.png" id="3_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c8nbgksj0uxit" path="res://assets/friend/walking_sprite_sheet/sprite_sheet_walking.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://dp20uu8nff8it" path="res://assets/friend/idle_sprite_sheet/idle_sheet.png" id="3_qhqgy"]
 
 [sub_resource type="Animation" id="Animation_qlg0r"]
 length = 0.001
@@ -252,3 +252,7 @@ shape = SubResource("CircleShape2D_3v2ag")
 zoom = Vector2(2, 2)
 limit_bottom = 285
 position_smoothing_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://ddhwwtdifq4b3"]
+[gd_scene load_steps=5 format=3 uid="uid://bovexgfl1pwcl"]
 
-[ext_resource type="Script" uid="uid://565w1cd32x72" path="res://scripts/main_menu.gd" id="1_kv8mn"]
-[ext_resource type="Texture2D" uid="uid://dcl3f66vm5p36" path="res://Assets/menu_buttons/back.png" id="2_2iy26"]
-[ext_resource type="Texture2D" uid="uid://umqagynsl4r0" path="res://Assets/menu_buttons/mute.png" id="2_kv8mn"]
-[ext_resource type="Script" uid="uid://b0c4ylyaa384y" path="res://scenes/button.gd" id="2_yjkok"]
+[ext_resource type="Script" uid="uid://c7c53n6qoambq" path="res://scripts/main_menu.gd" id="1_kv8mn"]
+[ext_resource type="Texture2D" uid="uid://dcl3f66vm5p36" path="res://assets/menu_buttons/back.png" id="2_2iy26"]
+[ext_resource type="Texture2D" uid="uid://umqagynsl4r0" path="res://assets/menu_buttons/mute.png" id="2_kv8mn"]
+[ext_resource type="Script" path="res://scenes/button.gd" id="2_yjkok"]
 
 [node name="Options" type="Control"]
 layout_mode = 3

@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://186ajujd3frh"]
 
 [ext_resource type="Script" uid="uid://c7c53n6qoambq" path="res://scripts/main_menu.gd" id="1_m1wpv"]
-[ext_resource type="Texture2D" uid="uid://c7y4hm0x3ogjv" path="res://Assets/menu_buttons/play.png" id="2_wu84c"]
-[ext_resource type="Texture2D" uid="uid://b6yk4qgs8cgd5" path="res://Assets/menu_buttons/options.png" id="3_8ln24"]
-[ext_resource type="Texture2D" uid="uid://beh3ht2xp7jpk" path="res://Assets/menu_buttons/quit.png" id="4_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://c7y4hm0x3ogjv" path="res://assets/menu_buttons/play.png" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://b6yk4qgs8cgd5" path="res://assets/menu_buttons/options.png" id="3_8ln24"]
+[ext_resource type="Texture2D" uid="uid://beh3ht2xp7jpk" path="res://assets/menu_buttons/quit.png" id="4_rtw2f"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3

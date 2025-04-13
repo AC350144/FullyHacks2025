@@ -4,11 +4,21 @@ var max_oxygen := 100
 var current_oxygen := 100
 
 @onready var oxygen_bar := $OxygenBar
+@onready var oxygen_timer := $Timer
 
 # OXYGEN BAR FUNCTIONALITY
 
+
 func _ready():
 	update_oxygen_bar()
+	oxygen_timer.start()
+	
+func _on_timer_timeout() -> void:
+	current_oxygen = max(current_oxygen - 2.5, 0)
+	update_oxygen_bar()
+	if current_oxygen == 0:
+		death()
+	
 	
 func get_hit(damage: int):
 	current_oxygen = max(current_oxygen - damage, 0)
