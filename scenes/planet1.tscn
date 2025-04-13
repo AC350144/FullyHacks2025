@@ -1,9 +1,17 @@
+<<<<<<< HEAD
 [gd_scene load_steps=8 format=4 uid="uid://ciipslusj36cx"]
+=======
+[gd_scene load_steps=7 format=4 uid="uid://ii8jh23o07h6"]
+>>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d
 
 [ext_resource type="Script" uid="uid://cobvte2gyquuq" path="res://scripts/planet_1.gd" id="1_3mkt7"]
-[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://Assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
+[ext_resource type="Texture2D" uid="uid://couhbxrmoptwa" path="res://assets/brackeys_platformer_assets/sprites/world_tileset.png" id="1_c3u4w"]
 [ext_resource type="PackedScene" uid="uid://bmou7yquaeulc" path="res://scenes/player.tscn" id="3_3mkt7"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://wlbdj8t3qkhd" path="res://scenes/killzone.tscn" id="4_chng0"]
+=======
+[ext_resource type="PackedScene" uid="uid://cl38fvqorqh51" path="res://scenes/enemy_1.tscn" id="4_chng0"]
+>>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rghbl"]
 texture = ExtResource("1_c3u4w")
@@ -195,6 +203,7 @@ horizontal_alignment = 1
 uppercase = true
 
 [node name="RayCast2D" type="RayCast2D" parent="."]
+<<<<<<< HEAD
 position = Vector2(1888, -116)
 
 [node name="Killzone" parent="." instance=ExtResource("4_chng0")]
@@ -202,3 +211,9 @@ position = Vector2(1888, -116)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
 position = Vector2(460, 43)
 shape = SubResource("WorldBoundaryShape2D_hklh5")
+=======
+position = Vector2(1899, -112)
+
+[node name="Enemy1" parent="." instance=ExtResource("4_chng0")]
+position = Vector2(343, -77)
+>>>>>>> 46df5d4be79c002f91bfbf91c796fc58b7f2ee6d

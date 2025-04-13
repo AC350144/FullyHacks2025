@@ -41,13 +41,23 @@ func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y += gravity * delta
 		
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 		
-	var direction = Input.get_axis("ui_left", "ui_right")
+	var direction = Input.get_axis("move_left", "move_right")
 	if direction:
-		velocity.x = direction * SPEED
+		velocity.x = direction * SPEED	
+		#play walking animation based on L or R
+		if direction > 0:
+			$AnimatedSprite2D/AnimationPlayer.play("walkingR")
+		else:
+			$AnimatedSprite2D/AnimationPlayer.play("walkingL")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
+		$AnimatedSprite2D/AnimationPlayer.stop()
 		
 	move_and_slide()
+
+#func movement_animated():
+	#if Input.is_action_pressed("ui_right"):
+		#$AnimatedSprite2D/AnimationPlayer.play("walkingR")
